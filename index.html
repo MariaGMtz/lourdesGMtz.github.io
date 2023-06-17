@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Maria de lourdes | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/75282310_2410103295922955_1579682163945635840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEICTKhslM7iWGEwIL5ZOepJT9LRZYD_MAlP0tFlgP8wG3OJCbray4rJujErbuClh0aIzy0Un8hc68NBvWnhxsg&_nc_ohc=Ndy2sROgwkEAX_qTyKi&_nc_ht=scontent.fmex10-4.fna&oh=00_AfDE6bWIbBQQ8I1ALDVpCoB0XYEzPpT7PzIW8Bzop4eg4A&oe=64B5479D">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/75282310_2410103295922955_1579682163945635840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEICTKhslM7iWGEwIL5ZOepJT9LRZYD_MAlP0tFlgP8wG3OJCbray4rJujErbuClh0aIzy0Un8hc68NBvWnhxsg&_nc_ohc=Ndy2sROgwkEAX_qTyKi&_nc_ht=scontent.fmex10-4.fna&oh=00_AfDE6bWIbBQQ8I1ALDVpCoB0XYEzPpT7PzIW8Bzop4eg4A&oe=64B5479D" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Trabajar">Trabajar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Enseñar">Enseñar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Aprender">Aprender</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/75282310_2410103295922955_1579682163945635840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEICTKhslM7iWGEwIL5ZOepJT9LRZYD_MAlP0tFlgP8wG3OJCbray4rJujErbuClh0aIzy0Un8hc68NBvWnhxsg&_nc_ohc=Ndy2sROgwkEAX_qTyKi&_nc_ht=scontent.fmex10-4.fna&oh=00_AfDE6bWIbBQQ8I1ALDVpCoB0XYEzPpT7PzIW8Bzop4eg4A&oe=64B5479D" alt="Foto de Jane Doe">
+        <h1>Hola, soy Maria de Lourdes</h1>
+        <!--<h2>SE LA MEJOR VERSION DE TI MISMO</h2>-->
+       <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="https://www.researchgate.net/profile/Karen-Machado-Mena-2/publication/352292946/figure/fig2/AS:1033512450813959@1623419978639/Figura-nro-12-Palabras-clave-Maestria-en-Educacion-desde-la-Diversidad-UM-C.png" alt="PALABRAS">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Mi nombre es Maria de Lourdes Garduño Martinez</h2>
+        <p class="seccion-texto">Mi ocupacion actualmente es trabajar para soluciones creativas, realizamos muebles y publicidad para ricolino, vero, takis, filorga, coronado, la corona, entre otras. Mis planes a futuro son estudiar una licenciatura en pedagogia espero retomar mis estudios lo antes posible, anteriormente estaba estudiando una ingenieria en gestion empresarial me gustaba mucho la carrera pero por motivos personales no pude continuar. Espero tener un futuro exitoso y rodeada de las personas con las cuales interactuo actualmente.  </p>
+        <img src="imagen-ia.jpeg.jpg" alt="foto">
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Anteriormente curse mi bachillerato con carrera tecnica en programacion. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+        
+              </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Me gusta mucho la parte de css ya que es el diseño grafico que se le da a el programa. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Actualmente estoy en un curso de programacion. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">COSAS QUE REALEMNTE ME ENCANTAN</h2>
+      <h3 class="seccion-descripcion">Me gusta salir, divertirme, conocer lugares, bailar, escuchar musica, ver peliculas, me gusta mi trabajo, me encantan las tortuguitas, amo a mis papis y anelo ser un orgullo para mi familia. </h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t39.30808-6/330441729_1155468168484892_6036795685501560707_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFO7GCxKTZ4GLRQtzgzC7L23cfnZW0WCOXdx-dlbRYI5Vos89aU2q2PmAKH7sSUn02faGtD0IefhmravxRDFaeW&_nc_ohc=Xs04z5JU6f0AX-GVdBg&_nc_ht=scontent.fmex10-4.fna&oh=00_AfD1FT6aPJuRr6jMmiyXZGhvGhSezy9p5OZWV5Xr3fIA6A&oe=6492BFE0" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/78779136_2416270171972934_1677493210819067904_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFKUMvewZg4ufPautLJ-nitKI_EXfOh_nMoj8Rd86H-c3ZwK8SMdApnG19lDsaegSA5kn7e-SYni2G0ehibl7zs&_nc_ohc=gkr0GHx_R2EAX8lJVhj&_nc_ht=scontent.fmex10-4.fna&oh=00_AfAkdwbnki0B5eRK1JEDYOfqr50H2dQiqruaQMpd_rqhrA&oe=64B5491C" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.6435-9/65166877_2270282696384789_8122610960142696448_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEF-a1-8-N7A5KxRQ1HVwZ62skiuH5zZOvaySK4fnNk64Z78HMSwDRMvL_N2SGSl180tpj0eK6Sp8-ADX-WgG99&_nc_ohc=XXYrUCNekBMAX-rm0xE&_nc_oc=AQmdTtV-Fxc0so4eWgYhctrIY8A2wMl6YRhEgG8DxmJmEZjJpHk_7LIywNbW0rNk36g&_nc_ht=scontent.fmex10-2.fna&oh=00_AfDcQE6U3j4WG3eJ3SdcGnmvolY11n_2HXXCZHvnNQXRaQ&oe=64B5661E" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://img.freepik.com/vector-gratis/fondo-flores-pintadas-colores_23-2148257738.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://1.bp.blogspot.com/-LF0-tu3weuM/YJe1RhiijJI/AAAAAAAABVs/tqrp9Nb4vm8Z7wIdMUWTzuUekJfuBjNogCLcBGAsYHQ/s400/image.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://img.freepik.com/vector-premium/cute-dibujos-animados-tortugas-marinas_160606-137.jpg?w=2000" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">GUIA RAPIDA DE PROGRAMACION</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://nancynsalazar.medium.com/gu%C3%ADa-r%C3%A1pida-para-construir-tu-portafolio-como-programador-a-9f02daeabb12" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Guía rápida para construir tu portafolio como programador(a)
+            </li>
+          </a>
+          <a href="https://nancynsalazar.medium.com/c%C3%B3mo-ser-un-a-mejor-programador-a-749c1bf98990" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Cómo ser un(a) mejor programador(a)
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python leer archivo JSON - cómo cargar JSON desde un archivo y procesar dumps
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python cómo escribir en un archivo - abrir, leer, escribir y otras funciones de archivos explicadas
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              ¿Para qué se usa Python? 10+ usos del lenguaje de programación Python
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Lo que me caracteriza y me encanta de mi y mi persona favorita.</h2>
+      <h3 class="seccion-descripcion">actualmente.</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/78779136_2416270171972934_1677493210819067904_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFKUMvewZg4ufPautLJ-nitKI_EXfOh_nMoj8Rd86H-c3ZwK8SMdApnG19lDsaegSA5kn7e-SYni2G0ehibl7zs&_nc_ohc=gkr0GHx_R2EAX8lJVhj&_nc_ht=scontent.fmex10-4.fna&oh=00_AfAkdwbnki0B5eRK1JEDYOfqr50H2dQiqruaQMpd_rqhrA&oe=64B5491C" alt="Foto de Gino">
+              <p class="testimonio-texto">Actualmente me encanta lo que realizo desde mi trabajo, mis pasatiempos y la gran desicion para poder seguir estudiando.</p>
+              <div class="testimonio-info">
+                <p class="cliente">MARIA DE LOURDES GARDUÑO MARTINEZ</p>
+                <p class="cargo">Actualmente instaladora de publicidad</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/132334274_3598984510216495_4585282211424721771_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH7RIiXIlsi801Sc0UPL0WF0YJJ2WupkFnRgknZa6mQWUFc1Endq9-e8IJ5AZZ_dL4m_VF-s0N8etuqViNUffm6&_nc_ohc=YvDkOABpYPcAX_i6nNA&_nc_ht=scontent.fmex10-4.fna&oh=00_AfBaXiJBClm-D4xv0NdIYKoxvEvgO3qs_FSaxHnSDTM0uw&oe=64B55E50" alt="Foto de Nora">
+              <p class="testimonio-texto">David, la persona mas divertida me encanta saber que tiene un nivel de locura muy alto lo considero mi persona favorita porque ha estado cuando mas lo nesecito.</p>
+              <div class="testimonio-info">
+                <p class="cliente">TE QUIERO CON EL CORAZON</p>
+                <p class="cargo">Eres unico me encanta tener tu amistad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/68565359_2339637962969489_4568423366905561088_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEg_VsyB40QhGvvV_upT19WcMg4_DyE44JwyDj8PITjgqLhGMSqXPaJuyg2GjrI4O6VhE0cxZG1jpGPrkHzJY3M&_nc_ohc=wArPbKmnkJMAX9_lXo3&_nc_ht=scontent.fmex10-4.fna&oh=00_AfAk4bR_lPA-_SiqCUpHj8SUz2RKpZcy_xJQmEMPspUMtw&oe=64B552B4" alt="Foto de Leonardo">
+              <p class="testimonio-texto">me encanta saber que tengo un objetivo claro y me gusta saber que pronto cumplire mis objetivos.</p>
+              <div class="testimonio-info">
+                <p class="cliente">MARIA</p>
+                <p class="cargo">Me gusta aprender y enseñar quiero ser una gran licenciada en pedagogia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              ESTA FUE UNA PEQUEÑA VERSION DE MI.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/75282310_2410103295922955_1579682163945635840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEICTKhslM7iWGEwIL5ZOepJT9LRZYD_MAlP0tFlgP8wG3OJCbray4rJujErbuClh0aIzy0Un8hc68NBvWnhxsg&_nc_ohc=Ndy2sROgwkEAX_qTyKi&_nc_ht=scontent.fmex10-4.fna&oh=00_AfDE6bWIbBQQ8I1ALDVpCoB0XYEzPpT7PzIW8Bzop4eg4A&oe=64B5479D" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Proyecto de Maria de Lourdes Garduño Martinez.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor"> MARIA (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
